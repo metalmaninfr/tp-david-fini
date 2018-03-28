@@ -1,0 +1,39 @@
+.Care {
+  background-color: $mainColor;
+  color: white;
+  font-size: 14px;
+  padding: 40px 0;
+  @include for-size(tablet-portrait-up){
+    font-size: 16px;
+  }
+  &-title {
+    font-size: 20px;
+    @include for-size(tablet-portrait-up){
+      font-size: 32px;
+    }
+  }
+  &-subTitle {
+    margin-top: 32px;
+  }
+  &-contentAssets {
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+    @include for-size(tablet-portrait-up){
+      flex-direction: column;
+      text-align: center;
+
+    }
+  }
+  &-imgContainer {
+    @include for-size(tablet-portrait-up){
+      margin-bottom: 32px;
+      margin-left: 20px ;
+    }
+  }
+  &-img {}
+  &-text {
+    margin-left: 20px;
+    line-height: 19px;
+  }
+}

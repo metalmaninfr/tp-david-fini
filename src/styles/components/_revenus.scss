@@ -1,0 +1,65 @@
+.Revenu{
+  background-color: white;
+  font-size: 14px;
+  padding: 40px 0;
+  @include for-size(tablet-portrait-up){
+    font-size: 16px;
+  }
+
+  &-all-container {
+    @include for-size(desktop-up) {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      margin-right: 5rem;
+    }
+  }
+
+  &-title{
+    font-size: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    @include for-size(tablet-portrait-up){
+      font-size: 32px;
+    }
+    @include for-size(desktop-up) {
+      font-size: 36px;
+      text-align: center;
+    }
+  }
+
+  &-container{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 10%;
+    padding: 2rem;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0px 15px 20px #eaeaea;
+
+  &-number {
+    font-size: 48px;
+    margin-bottom: 1.2rem;
+  }
+  &-desc {
+    font-size: 14px;
+    @include for-size(desktop-up) {
+      font-size: 16px;
+    }
+  }
+  }
+}
+
+.color-1 {
+  color: #927EEC;
+}
+
+.color-2 {
+  color: #4A7DD8;
+}
+
+.color-3 {
+  color: #6DE8D7;
+}

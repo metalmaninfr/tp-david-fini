@@ -1,0 +1,58 @@
+.around-md {
+  @include for-size(tablet-portrait-up) {
+  justify-content: space-around;
+  }
+}
+
+.Services {
+  background: url(./bg-services.90af0d20.jpg) black no-repeat 50%;
+    background-size: cover;
+    padding: 3.2rem 0;
+    color: #fff;
+    @include for-size(tablet-portrait-up) {
+    padding: 8rem 0;
+    text-align: center;
+  }
+  &-title {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  &-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+  }
+  &-imgContainer {
+    @include for-size(tablet-portrait-up) {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+    }
+  }
+  &-img {
+    width: 11rem;
+    height: 11rem;
+  }
+  &-item{
+    margin-top: 2.4rem;
+    @include for-size(tablet-portrait-up) {
+    margin-top: 6.4rem;
+    }
+  }
+}
+.Service-item .reverse {
+  text-align: right;
+  @include for-size(tablet-portrait-up) {
+  text-align: center;
+  }
+}
+
+.mobileLeft{
+  @include for-size(tablet-portrait-up) {
+  text-align: center;
+  }
+}

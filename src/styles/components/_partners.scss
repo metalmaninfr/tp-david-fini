@@ -1,0 +1,25 @@
+.Partners{
+  background: #eaeaea;
+  padding: 3.2rem 0;
+  @include for-size(tablet-portrait-up) {
+    padding: 6.4rem 0;
+  }
+  &-img{
+    width: 4.2rem;
+    height: 2.7rem;
+    @include for-size(tablet-portrait-up) {
+      width: 7.5rem;
+      height: 4.8rem;
+    }
+  }
+}
+
+.col-xs-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+.around-xs {
+  justify-content: space-around;
+}
