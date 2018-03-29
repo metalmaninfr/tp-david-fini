@@ -92,3 +92,38 @@
     margin: 1rem 0;
   }
 }
+
+
+.FaqItems-checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 5rem;
+  top: 0;
+  cursor: pointer;
+  left: 0;
+  &-answer {
+  margin: 0;
+  height: 0;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  overflow: hidden;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  padding-top: 2rem; }
+
+}
+
+[id^="tab"]:checked ~ [id^="tab-label"] {
+  color: #4D7FD5; }
+
+[id^="tab"]:checked ~ [id^="tab-label"] > .FaqItems-arrow {
+  color: #4D7FD5;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+[id^="tab"]:checked ~ [id^="tab-content"] {
+  height: auto;
+  overflow: auto; }
